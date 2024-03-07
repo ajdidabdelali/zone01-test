@@ -7,15 +7,7 @@ Write a function `ListPushBack` that inserts a new element `NodeL` at the end of
 ### Expected function and structure
 
 ```go
-type NodeL struct {
-	Data interface{}
-	Next *NodeL
-}
 
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
 
 func ListPushBack(l *List, data interface{}) {
 
@@ -29,6 +21,15 @@ Here is a possible program to test your function :
 ```go
 package main
 
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
 import (
 	"fmt"
 	"piscine"
